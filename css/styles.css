@@ -652,13 +652,6 @@ body {
     color: var(--primary-bg-color);
 }
 
-
-
-.hero-close:hover,
-.hero-close:focus {
-    fill: var(--accent-color);
-}
-
 .backdrop {
     position        : fixed;
     top             : 0;
@@ -682,20 +675,20 @@ body {
     padding-top: 94px;
 }
 
-.our-featur {
+.feature {
     display     : flex;
     padding-left: 0;
 }
 
-.feature-list {
+.feature__list {
     width: 270px;
 }
 
-.feature-list:not(:last-child) {
+.feature__list:not(:last-child) {
     margin-right: 30px;
 }
 
-.featurs-link {
+.feature__link {
     display        : flex;
     align-items    : center;
     justify-content: center;
@@ -706,7 +699,7 @@ body {
     width          : 270px;
 }
 
-.icon-featere {
+.feature__icon {
     height: 70px;
     width : 70px;
 }
