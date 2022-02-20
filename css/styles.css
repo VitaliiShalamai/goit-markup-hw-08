@@ -880,7 +880,7 @@ body {
 
 /*--------------------------------CLIENTS---------------------------------*/
 
-.client {
+.client-section {
     padding-top   : 94px;
     padding-bottom: 94px;
 }
@@ -892,11 +892,11 @@ body {
     margin-top     : 16px;
 }
 
-.client-item:not(:last-child) {
+.client-list__item:not(:last-child) {
     margin-right: 30px;
 }
 
-.client-link {
+.client-list__link {
     display        : flex;
     height         : 92px;
     width          : 170px;
@@ -911,8 +911,8 @@ body {
         fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.client-list .client-link:hover,
-.client-list .client-link:focus {
+.client-list .client-list__link:hover,
+.client-list .client-list__link:focus {
     fill: var(--accent-color);
 }
 
