@@ -571,7 +571,7 @@ body {
     justify-content: center;
 }
 
-.agreement {
+.modal__agreement {
     color                : var(--accent-color);
     text-decoration-color: none;
 }
