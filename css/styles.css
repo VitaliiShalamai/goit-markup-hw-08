@@ -136,8 +136,7 @@ body {
 .current-link::after:hover {
     background: #2196F3;
 }
-
-.site-nav .site-nav__item:not(:last-child) {
+.site-nav__item:not(:last-child) {
     margin-right: 50px;
 }
 
@@ -172,6 +171,8 @@ body {
 .contacts {
     display    : flex;
     margin-left: auto;
+    align-items: center;
+    justify-content: center;
 }
 
 .contacts .site-nav__item:not(:last-child) {
@@ -207,7 +208,7 @@ body {
     fill : var(--accent-color);
 }
 
-.icon-header {
+.icontacts__icon {
     margin-right: 10px;
 }
 
