@@ -684,12 +684,6 @@ html {
   padding-bottom: 60px;
 }
 
-@media screen and (min-width: 1200px) {
-  .team-section {
-    width: 100%;
-  }
-}
-
 .team-title {
   color: var(--title-text-color);
   font-weight: bold;
@@ -730,7 +724,7 @@ html {
 
 @media screen and (min-width: 1200px) {
   .team__member {
-    width: calc((100% - 4 * 15px) / 5);
+    width: calc((100% - 8 * 15px) / 4);
     margin: 15px;
   }
   .team__member .team .team__member:not(:last-child) {
