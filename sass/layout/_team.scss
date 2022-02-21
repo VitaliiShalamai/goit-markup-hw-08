@@ -1,9 +1,11 @@
 .team-section {
     background-color: var(--potfolio-bg-color);
-    // padding-top     : 94px;
-    // padding-bottom  : 94px;
     padding-top: 60px;
     padding-bottom: 60px;
+    @media screen and (min-width: 1200px) {
+    width: 100%;
+
+    }
 }
 
 .team-title {
@@ -20,14 +22,30 @@
     justify-content: center;
     padding-left   : 0;
     padding-right  : 0;
-    margin-left    : 0;
-    margin-right   : 0;
+    margin-left    : auto;
+    margin-right   : auto;
     @media screen and (min-width: 768px) {
         display : flex;
         flex-wrap: wrap;
     }
+    @media screen and (min-width: 1200px) {
+    width: 1200px;
+}
 }
 
+.team__member {
+    @media screen and (min-width: 768px) {
+    width : calc((100% - 4 * 15px) / 2);
+    margin: 15px;
+    }
+    @media screen and (min-width: 1200px) {
+    width : calc((100% - 4 * 15px) / 5);
+    margin: 15px;
+    .team .team__member:not(:last-child) {
+    margin-right: 30px;
+}
+}
+}
 
 
 .team__member {
@@ -51,9 +69,6 @@ img {
     padding-bottom: 30px;
 }
 
-// .team .team__member:not(:last-child) {
-//     margin-right: 30px;
-// }
 
 
 .name {

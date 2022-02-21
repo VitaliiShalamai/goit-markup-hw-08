@@ -16,8 +16,8 @@
 
 @mixin desk {
     @media screen and (min-width: 768px) {
-        width: calc ((100% - 6*10px) / 2);
-        margin: 10px;
+        width: calc((100% - 4 * 15px) / 2);
+        margin: 15px;
     }
 }
 
