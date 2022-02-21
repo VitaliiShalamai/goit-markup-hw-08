@@ -1,0 +1,92 @@
+.potfolio {
+    padding-top   : 94px;
+    padding-bottom: 94px;
+}
+
+.project {
+    display     : flex;
+    flex-wrap   : wrap;
+    padding-left: 0;
+}
+
+.project-item {
+    width        : 370px;
+    margin-right : 30px;
+    margin-bottom: 30px;
+
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        &__thumb {
+            position: relative;
+            overflow: hidden;
+        }
+        &:hover .project-item__overlay {
+            transform : translateY(0);
+            background: rgba(33, 150, 243, 0.9);
+            opacity   : 1;
+        }
+        &:hover {
+            background: #FFFFFF;
+            border    : -1px solid #EEEEEE;
+            box-sizing: border-box;
+            box-shadow:
+                0px 1px 1px rgba(0, 0, 0, 0.12),
+                0px 4px 4px rgba(0, 0, 0, 0.06),
+                1px 4px 6px rgba(0, 0, 0, 0.16);
+        }
+        &:nth-child(3n) {
+            margin-right: 0;
+        }
+        &:nth-last-child(-n+3) {
+            margin-bottom: 0;
+        }
+        &__overlay {
+            font-size  : 18px;
+            line-height: 1.56;
+
+            letter-spacing: 0.03em;
+            color         : var(--hero-text-color);
+            padding       : 63px 24px;
+
+            position: absolute;
+            width   : 100%;
+            top     : 0;
+            left    : 0;
+
+            margin    : 0;
+            transform : translateY(100%);
+            transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+            ;
+            background: rgba(33, 150, 243, 0.9);
+            opacity   : 0;
+        }
+        &__description {
+            padding: 20px 24px;
+            margin : 0;
+
+            border    : 1px solid #EEEEEE;
+            background: var(--primary-bg-color);
+        }
+        &__title {
+            color         : var(--title-text-color);
+            font-weight   : bold;
+            font-size     : 18px;
+            line-height   : 2;
+            letter-spacing: 0.06em;
+
+            margin-top   : 0;
+            margin-bottom: 4px;
+        }
+        &__name {
+            color        : var(--primary-text-color);
+            font-size    : 16px;
+            line-height  : 1.87;
+            margin-top   : 0;
+            margin-bottom: 0;
+        }
+}
+
+
+img {
+    display: block;
+}

@@ -1,10 +1,23 @@
-@import '../sass/layout/clients';
-@import '../sass/layout/features';
-@import '../sass/layout/footer';
+@import '../sass/base/commons';
+@import '../sass/base/reset';
+
+@import '../sass/components/container';
+@import '../sass/components/logo';
+@import '../sass/components/modal';
+@import '../sass/components/filter';
+@import '../sass/components/links';
+
+@import '../sass/utils/hidden';
+@import '../sass/utils/var';
+@import '../sass/utils/placeholder';
+
 @import '../sass/layout/header';
 @import '../sass/layout/hero';
-@import '../sass/layout/portfolio';
-@import '../sass/layout/team';
+@import '../sass/layout/features';
 @import '../sass/layout/works';
+@import '../sass/layout/team';
+@import '../sass/layout/clients';
+@import '../sass/layout/footer';
+@import '../sass/layout/portfolio';
 
 
