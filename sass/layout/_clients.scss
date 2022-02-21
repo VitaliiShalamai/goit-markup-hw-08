@@ -3,8 +3,11 @@
     padding-top: 60px;
     padding-bottom: 45px;
 }
+    @media screen and (min-width: 1200px) {
     padding-top   : 94px;
     padding-bottom: 94px;
+}
+
 }
 
 .client-title {
@@ -39,9 +42,7 @@
     width : calc((100% - 12 * 15px) / 6);
     margin: 15px;
 
-    .client-list .client-list__link:hover, .client-list .client-list__link:focus {
-  fill: var(--accent-color);
-}
+
 }
 }
 
@@ -58,10 +59,15 @@
   border-radius: 4px;
   align-items: center;
   justify-content: center;
+
   fill: #AFB1B8;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
+  .client-list &:hover,
+  .client-list &:focus {
+      fill: var(--accent-color);
+  }
+}
 
 
 
