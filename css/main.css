@@ -42,6 +42,7 @@ html {
 @media screen and (min-width: 1200px) {
   .container {
     width: 1200px;
+    width: 100%;
   }
 }
 
@@ -700,6 +701,13 @@ html {
   padding-right: 0;
   margin-left: 0;
   margin-right: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .team {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .team__member {
