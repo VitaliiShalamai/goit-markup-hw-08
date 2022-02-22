@@ -11,4 +11,20 @@
   function toggleModal() {
     refs.modal.classList.toggle("is-hidden");
   }
+
+  const refsMenu = {
+    openModalBtn: document.querySelector("[data-menu-open]"),
+    closeModalBtn: document.querySelector("[data-menu-close]"),
+    modal: document.querySelector("[data-menu]"),
+  };
+
+  refsMenu.openModalBtn.addEventListener("click", toggleMenu);
+  refsMenu.closeModalBtn.addEventListener("click", toggleMenu);
+
+  function toggleMenu() {
+    refsMenu.modal.classList.toggle("is-hidden");
+  }
+
 })();
+
+

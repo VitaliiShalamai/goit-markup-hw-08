@@ -135,3 +135,43 @@
     fill : var(--accent-color);
 }
 
+.menu-btn, .close-menu-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: block;
+    border: 0px none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.menu-btn__icon {
+
+    @media screen and (min-width: 479px) {
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    border: none;
+    display : block;
+
+    background-color: transparent;
+    fill: black;
+}
+
+    @media screen and (min-width: 768px) {
+    display: none;
+}
+}
+
+.mob-menu-lis {
+    font-weight: 600;
+    font-size: 12;
+    line-height: 1.32;
+    letter-spacing: 0.1em;
+    color: var(--title-text-color);
+    position: relative;
+        &:hover,
+        &:focus {
+            color: var(--accent-color);
+        }
+}
