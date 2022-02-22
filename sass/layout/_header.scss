@@ -135,7 +135,7 @@
     fill : var(--accent-color);
 }
 
-.menu-btn, .close-menu-btn {
+.menu-btn {
     position: absolute;
     top: 20px;
     right: 20px;
@@ -163,24 +163,3 @@
 }
 }
 
-.mob-menu-lis {
-    font-weight: 600;
-    font-size: 12;
-    line-height: 1.32;
-    letter-spacing: 0.1em;
-    color: var(--title-text-color);
-    position: relative;
-        &:hover,
-        &:focus {
-            color: var(--accent-color);
-        }
-}
-
-.mob-menu {
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: #FFFFFF;
-    width: 100vh;
-    height: 100vh;
-}

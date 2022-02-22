@@ -598,7 +598,7 @@ html {
   fill: var(--accent-color);
 }
 
-.menu-btn, .close-menu-btn {
+.menu-btn {
   position: absolute;
   top: 20px;
   right: 20px;
@@ -624,28 +624,6 @@ html {
   .menu-btn__icon {
     display: none;
   }
-}
-
-.mob-menu-lis {
-  font-weight: 600;
-  font-size: 12;
-  line-height: 1.32;
-  letter-spacing: 0.1em;
-  color: var(--title-text-color);
-  position: relative;
-}
-
-.mob-menu-lis:hover, .mob-menu-lis:focus {
-  color: var(--accent-color);
-}
-
-.mob-menu {
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-color: #FFFFFF;
-  width: 100vh;
-  height: 100vh;
 }
 
 .hero {
@@ -692,7 +670,7 @@ html {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .hero-title {
     font-weight: 900;
     font-size: 44px;
@@ -1336,6 +1314,8 @@ img {
 @media screen and (min-width: 480px) {
   .filter {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
   }
 }
 
@@ -1348,6 +1328,7 @@ img {
 @media screen and (min-width: 1200px) {
   .filter {
     width: 1200px;
+    flex-wrap: nowrap;
   }
 }
 
