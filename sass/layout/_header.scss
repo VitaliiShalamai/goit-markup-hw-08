@@ -175,3 +175,12 @@
             color: var(--accent-color);
         }
 }
+
+.mob-menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #FFFFFF;
+    width: 100vh;
+    height: 100vh;
+}
