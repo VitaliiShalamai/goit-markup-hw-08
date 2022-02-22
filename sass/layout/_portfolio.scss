@@ -10,6 +10,18 @@
 }
 }
 
+.filter {
+  @media screen and (min-width: 480px) {
+        display : flex;
+    }
+    @media screen and (min-width: 768px) {
+     display: flex;
+}
+    @media screen and (min-width: 1200px) {
+    width: 1200px;
+}
+}
+
 .project {
     padding-left: 0;
     @media screen and (min-width: 768px) {

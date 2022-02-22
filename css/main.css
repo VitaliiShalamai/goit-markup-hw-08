@@ -516,7 +516,7 @@ html {
   background: #2196F3;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .contact-block {
     display: none;
   }
@@ -1058,6 +1058,24 @@ img {
   .potfolio {
     padding-top: 94px;
     padding-bottom: 94px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .filter {
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .filter {
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .filter {
+    width: 1200px;
   }
 }
 
