@@ -625,12 +625,38 @@ html {
 }
 
 .feature {
-  display: flex;
   padding-left: 0;
+  justify-content: center;
 }
 
-.feature__list {
-  width: 270px;
+@media screen and (min-width: 480px) {
+  .feature {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .feature__list {
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .feature__list {
+    width: calc((100% - 4 * 15px) / 3);
+    margin: 15px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .feature__list {
+    width: calc((100% - 8 * 15px) / 5);
+    margin: 15px;
+  }
+  .feature__list .team .team__member:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .feature__list:not(:last-child) {
@@ -667,7 +693,6 @@ html {
   background: #F5F4FA;
   border-radius: 4px;
   height: 120px;
-  width: 270px;
 }
 
 .main-project {
