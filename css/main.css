@@ -476,6 +476,12 @@ html {
   align-items: center;
 }
 
+@media (max-width: 768px) {
+  .navigation {
+    display: none;
+  }
+}
+
 .site-nav {
   display: flex;
   padding-left: 93px;
@@ -510,13 +516,26 @@ html {
   background: #2196F3;
 }
 
-.contact-block {
-  display: flex;
-  margin-left: auto;
+@media (max-width: 767px) {
+  .contact-block {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contact-block {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contact-block {
+    display: flex;
+    margin-left: auto;
+  }
 }
 
 .contacts {
-  display: flex;
   margin-left: auto;
   align-items: center;
   justify-content: center;
@@ -526,8 +545,13 @@ html {
   margin-right: 10px;
 }
 
-.contacts .site-nav__item:not(:last-child) {
-  margin-right: 50px;
+@media screen and (min-width: 1200px) {
+  .contacts {
+    display: flex;
+  }
+  .contacts .site-nav__item-one {
+    margin-right: 50px;
+  }
 }
 
 .site-nav .site-nav__link {
