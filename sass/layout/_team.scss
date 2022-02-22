@@ -2,6 +2,10 @@
     background-color: var(--potfolio-bg-color);
     padding-top: 60px;
     padding-bottom: 60px;
+    @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
 }
 
 .team {
@@ -16,6 +20,7 @@
     }
     @media screen and (min-width: 1200px) {
     width: 1200px;
+    margin-bottom: 0;
 }
 }
 
@@ -29,7 +34,7 @@
     }
     @media screen and (min-width: 1200px) {
     width : calc((100% - 8 * 15px) / 4);
-    margin: 15px;
+    margin-bottom: 0;
     .team .team__member:not(:last-child) {
     margin-right: 30px;
 }
@@ -87,5 +92,39 @@ img {
     line-height  : 1.16;
     text-align   : center;
     margin-top   : 0;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
+    @media screen and (min-width: 480px) {
+        font-weight: bold;
+        font-size: 28px;
+        line-height: 33px;
+        /* identical to box height */
+
+        text-align: center;
+        letter-spacing: 0.03em;
+
+        color: #212121;
+    }
+    @media screen and (min-width: 768px) {
+        font-weight: bold;
+        font-size: 28px;
+        line-height: 1.178;
+        text-align: center;
+        letter-spacing: 0.03em;
+
+        color: #212121;
+
+
+        color: #212121;
+    }
+    @media screen and (min-width: 1200px) {
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 1.167;
+        text-align: center;
+        letter-spacing: 0.03em;
+
+        color: #212121;
+
+
+    }
 }
